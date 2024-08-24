@@ -1,0 +1,1 @@
+INSERT into linked_user_but_read_only (name) VALUES ('박해일');

@@ -1,0 +1,30 @@
+services:
+  origin-db:
+    image: mariadb:latest
+    container_name: origin-db-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: origin_db
+      MYSQL_USER: origin_db_user
+      MYSQL_PASSWORD: password123
+    ports:
+      - "3307:3306"
+    networks:
+      - db_network
+
+  copied-db:
+    image: mariadb:latest
+    container_name: copied-db-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: copied_db
+      MYSQL_USER: copied_db_user
+      MYSQL_PASSWORD: password123
+    ports:
+      - "3308:3306"
+    networks:
+      - db_network
+
+networks:
+  db_network:
+    driver: bridge

@@ -1,0 +1,2 @@
+-- INSTALL PLUGIN FEDERATED SONAME 'ha_federated.so';
+SHOW ENGINES;
