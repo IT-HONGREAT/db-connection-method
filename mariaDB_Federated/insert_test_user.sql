@@ -1,1 +1,1 @@
-INSERT into linked_user_but_read_only (name) VALUES ('박해일');
+INSERT into user (name) VALUES ('브루노마스');

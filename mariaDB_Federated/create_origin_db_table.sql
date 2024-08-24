@@ -1,4 +1,4 @@
 CREATE TABLE user (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(12),
+  name VARCHAR(12)
 );
